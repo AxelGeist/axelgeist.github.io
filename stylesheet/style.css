@@ -393,7 +393,7 @@
     row-gap: 5em;
   }
 
-  .education-img{
+  .education-img {
     text-align: right;
   }
 
@@ -411,15 +411,10 @@
     margin-bottom: 0;
   }
 
-  .university, .company { 
+  .title { 
     font-weight: bold;
     font-size: 20px;
   }
-
-  .title, .job-title  {
-    font-size: 16px;
-  }
-
 
 
 
@@ -451,10 +446,6 @@
     max-width: 90px;
     height: auto;
   }
-
-  .study-duration, .work-duration {
-    text-decoration: none;
-  }
   
 
 
@@ -471,7 +462,7 @@
     font-family: Arial;
     display: grid;
     grid-template-columns: var(--grid-template-columns);
-    row-gap: 5em;
+    row-gap: 1em;
   }
 
   .project-img{
@@ -485,8 +476,14 @@
 
   #fishes_img, #blades_img{
     animation: spin linear 10s infinite;
-    max-width: 180px;
+    max-width: 140px;
     height: auto;
+  }
+
+  #DelftBlue_img {
+    max-width: 110px;
+    height: auto;
+    padding-right: 1vw;
   }
 
 
@@ -789,11 +786,11 @@
     font-size: 24px;
   }
 
-  .university, .company { 
+  .title { 
     font-size: 16px;
   }
 
-  .title, .job-title, .study-duration, .work-duration, .work-type  {
+  .text, .work-type  {
     font-size: 15px;
   }
 
