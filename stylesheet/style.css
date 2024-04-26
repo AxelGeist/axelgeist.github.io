@@ -50,6 +50,20 @@
       font-weight: 200;
       overflow: hidden;
   }
+  
+  /* canvas {
+    opacity: 0.8;
+  } */
+
+  canvas#canvas {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    z-index: -1;   
+}
+
 
   br {
       content: "";
@@ -61,12 +75,17 @@
   /* MENU */
 
   header {
-    background-color: var(--primary-color);  
+    /* background-color: var(--primary-color);   */
     position: fixed;
     width: 100%;
     z-index: 3;
     /* font-family: 'Montserrat', sans-serif; */
   }
+
+  .header-scrolled {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for the color change */
+}
 
   header::after {
     content: '';
@@ -152,7 +171,7 @@
   /* WELCOME */
    .welcome-text {
       height: 80vh;
-      color: black;
+      color: white;
       letter-spacing: 3px;
       display: flex;
       align-items: center;
@@ -160,6 +179,7 @@
       justify-content: center;
       font-weight: bold;
       font-size: 26px;
+      margin-bottom: 10%;
   }  
 
   .welcome-text-h1 {
