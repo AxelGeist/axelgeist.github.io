@@ -208,6 +208,10 @@
     animation: 1s blink linear infinite;
   }
 
+  .hidden {
+    visibility: hidden;
+  }
+
   @keyframes blink {
     0%,
     49% {
