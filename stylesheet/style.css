@@ -43,7 +43,7 @@
 
   body {
       margin: 0;
-      padding: 0; /*maybe not necessary */
+      padding: 0;
       background-color: #f1f0f8;
       height: 100%;
       font-family: 'Montserrat', sans-serif; 
@@ -203,7 +203,7 @@
     display: inline-block;
     height: 50px;
     width: 6px;
-    background: black;
+    background: white;
     vertical-align: middle;
     animation: 1s blink linear infinite;
   }
