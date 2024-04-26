@@ -36,7 +36,7 @@ split_word();
 
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header'); // Select the header element
-  const scrollThreshold = 1; // 10% of the viewport height
+  const scrollThreshold = 1;
 
   if (window.scrollY > scrollThreshold) {
       header.classList.add('header-scrolled');
