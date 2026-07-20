@@ -431,7 +431,7 @@
     height: auto;
   }
 
-  #TUD-text {
+  .education-text--no-bottom-margin {
     margin-bottom: 0;
   }
 
@@ -636,6 +636,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+
+  .media ul li {
+    display: inline-block;
   }
 
   .media ul a {
@@ -849,7 +853,6 @@
     height: 80px;
   }
 }
-
 
 
 
