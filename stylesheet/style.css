@@ -75,21 +75,14 @@ header {
   background-color: var(--primary-color);
 }
 
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .container {
+  display: flex;
+  align-items: flex-start;
   margin: 0 auto;
   width: 95%;
 }
 
 .logo {
-  float: left;
-  position: inherit;
-  text-align: left;
   padding: 27px 0; /*determines the height of the blue header background */
   width: 70px;
   height: 40px;
@@ -102,7 +95,7 @@ header::after {
 }
 
 nav {
-  float: right;
+  margin-left: auto;
 }
 
 nav ul {
