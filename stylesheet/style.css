@@ -563,7 +563,7 @@
     overflow: hidden;
   }
 
-  .contact-form input, .contact-form-text {
+  .contact-form input, .contact-form button, .contact-form-text {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -858,7 +858,7 @@
     padding-top: 40px;
   } */
 
-  .contact-form input, .contact-form-text {
+  .contact-form input, .contact-form button, .contact-form-text {
     font-size: 14px;
   }
 
@@ -871,8 +871,6 @@
     height: 80px;
   }
 }
-
-
 
 
 
