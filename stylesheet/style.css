@@ -75,7 +75,7 @@ header {
   background-color: var(--primary-color);
 }
 
-.container {
+.site-header__inner {
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
@@ -122,7 +122,7 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-.CVButton {
+.resume-link {
   width: 120px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -141,7 +141,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-.CVButton:hover {
+.resume-link:hover {
   box-shadow:
     0 0 10px 0 var(--secondary-color) inset,
     0 0 20px 2px var(--secondary-color);
@@ -207,7 +207,7 @@ nav a:hover {
   font-size: 18px;
 }
 
-#main {
+.about-content {
   color: white;
   display: flex;
   flex-direction: column;
@@ -224,7 +224,7 @@ nav a:hover {
   border: 10px solid #f1f0f8;
 }
 
-.user-form {
+.about-section {
   width: 100%;
 }
 
@@ -254,7 +254,7 @@ nav a:hover {
 
 /* SKILLS */
 
-.user-form h2 {
+.about-section h2 {
   font-size: 30px;
 }
 
@@ -398,7 +398,7 @@ nav a:hover {
   height: auto;
 }
 
-.title {
+.timeline__title {
   font-weight: bold;
   font-size: 20px;
 }
@@ -560,7 +560,7 @@ footer {
 
   /* ABOUT */
 
-  #main {
+  .about-content {
     overflow: visible;
     margin: auto;
     display: block;
@@ -576,7 +576,7 @@ footer {
     padding: 0;
   }
 
-  .user-form {
+  .about-section {
     width: 90%;
     margin: auto;
   }
@@ -614,13 +614,13 @@ footer {
     padding-top: 0.5em;
   }
 
-  .CVButton {
+  .resume-link {
     font-size: 12px;
     margin-bottom: 0;
     width: 80px;
   }
 
-  .CVButton:hover {
+  .resume-link:hover {
     box-shadow: none;
   }
 
@@ -635,7 +635,7 @@ footer {
     padding: 20px 0;
   }
 
-  .user-form h2 {
+  .about-section h2 {
     font-size: 22px;
   }
 
@@ -668,11 +668,11 @@ footer {
     font-size: 24px;
   }
 
-  .title {
+  .timeline__title {
     font-size: 16px;
   }
 
-  .text {
+  .timeline__meta {
     font-size: 15px;
   }
 
