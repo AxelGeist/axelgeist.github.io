@@ -50,6 +50,18 @@
       font-weight: 200;
       overflow: hidden;
   }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
   
   /* canvas {
     opacity: 0.8;
@@ -404,7 +416,9 @@
  
   /* EDUCATION */
 
-  .education-section h1 {
+  .education-section h2 {
+    font-size: 2em;
+    margin: 0.67em 0;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -444,7 +458,9 @@
 
   /* EXPERIENCE */
 
-  .experience-section h1 {
+  .experience-section h2 {
+    font-size: 2em;
+    margin: 0.67em 0;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -526,7 +542,9 @@
     /* margin-top: 70px; */
   }
 
-  .contact-section h1 {
+  .contact-section h2 {
+    font-size: 2em;
+    margin: 0.67em 0;
     color: white;
     text-align: center;
   }
@@ -810,7 +828,7 @@
     padding-left: 2vh;
   }
 
-  .education-section h1, .experience-section h1, .project-section h1, .contact-section h1 {
+  .education-section h2, .experience-section h2, .project-section h1, .contact-section h2 {
     font-size: 24px;
   }
 
@@ -853,8 +871,6 @@
     height: 80px;
   }
 }
-
-
 
 
 
