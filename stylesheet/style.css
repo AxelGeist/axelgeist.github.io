@@ -415,50 +415,9 @@
     transform: rotateZ(180deg);
   }
  
-  /* EDUCATION */
+  /* TIMELINE */
 
-  .education-section h2 {
-    font-size: 2em;
-    margin: 0.67em 0;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .education-grid {
-    font-family: Arial;
-    display: grid;
-    grid-template-columns: var(--grid-template-columns);
-    row-gap: 5em;
-  }
-
-  .education-img {
-    text-align: right;
-  }
-
-  .education-text {
-    margin: auto;
-    width: 100%;
-  }
-
-  .education-grid div img {
-    max-width: 180px;
-    height: auto;
-  }
-
-  .education-text--no-bottom-margin {
-    margin-bottom: 0;
-  }
-
-  .title { 
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-
-
-  /* EXPERIENCE */
-
+  .education-section h2,
   .experience-section h2 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -467,31 +426,46 @@
     align-items: center;
   }
 
-  .experience-grid {
+  .timeline {
     font-family: Arial;
     display: grid;
-    grid-template-columns: var(--grid-template-columns);
     row-gap: 5em;
   }
 
-  .experience-img{
+  .timeline__item {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+  }
+
+  .timeline__media {
+    grid-column: 1;
     text-align: right;
   }
 
-  .experience-text {
+  .timeline__content {
+    grid-column: 3;
     margin: auto;
     width: 100%;
   }
 
-  .experience-grid div img {
+  .timeline__content--align-end {
+    margin-bottom: 0;
+  }
+
+  .timeline--experience .timeline__media img {
     max-width: 90px;
     height: auto;
   }
-  
 
+  .timeline--education .timeline__media img {
+    max-width: 180px;
+    height: auto;
+  }
 
-
-
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+  }
   /* Projects */
   .project-section h1 {
     text-align: center;
@@ -756,7 +730,7 @@
     }
 
     /* Education Logo */
-    .education-grid div img {
+    .timeline--education .timeline__media img {
       min-width: 100px;
       height: auto;
     }
@@ -841,11 +815,11 @@
     font-size: 15px;
   }
 
-  .education-grid, .experience-grid, .project-grid {
+  .timeline, .project-grid {
     row-gap: 2em;
   }
 
-  .experience-grid div img {
+  .timeline--experience .timeline__media img {
     max-width: 60px;
   }
 
@@ -872,6 +846,4 @@
     height: 80px;
   }
 }
-
-
 
