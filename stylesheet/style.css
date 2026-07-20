@@ -56,7 +56,7 @@ canvas#canvas {
   z-index: -1;
 }
 
-br {
+.welcome-text br {
   content: "";
   margin: 2em;
   display: block;
@@ -210,7 +210,7 @@ nav a:hover {
 }
 
 /* ABOUT */
-strong {
+.user-info strong {
   font-size: 18px;
 }
 
@@ -261,7 +261,7 @@ strong {
 
 /* SKILLS */
 
-h2 {
+.user-form h2 {
   font-size: 30px;
 }
 
@@ -313,12 +313,20 @@ h2 {
   perspective: 100px;
 }
 
-img {
+.slide img,
+.timeline__media img {
   width: 60%;
+}
+
+.avatar,
+.slide img,
+.timeline__media img {
   transition: transform 1s;
 }
 
-img:hover {
+.avatar:hover,
+.slide img:hover,
+.timeline__media img:hover {
   transform: translateZ(20px);
 }
 
@@ -634,7 +642,7 @@ footer {
     padding: 20px 0;
   }
 
-  h2 {
+  .user-form h2 {
     font-size: 22px;
   }
 
