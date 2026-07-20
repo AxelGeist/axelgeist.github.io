@@ -5,6 +5,12 @@
   --grid-template-columns: 6fr 1fr 7fr;
 }
 
+@media (max-width: 1100px) {
+  :root {
+    --grid-template-columns: 6fr 1fr 12fr;
+  }
+}
+
 /* Distance to top, when using MENU links */
 #About {
   padding-top: 20vh;
@@ -18,6 +24,18 @@
 /* Grid */
 .grid {
   padding: 50px 0;
+}
+
+@media (max-width: 480px) {
+  #Education,
+  #Experience {
+    padding-top: 80px;
+  }
+
+  .grid {
+    padding-right: 2vh;
+    padding-left: 2vh;
+  }
 }
 
 html {
@@ -148,6 +166,33 @@ nav a:hover {
   border: 3px solid var(--secondary-color);
 }
 
+@media (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 30px;
+    padding: 15px 0;
+  }
+
+  nav li {
+    padding-top: 0.5em;
+  }
+
+  .resume-link {
+    font-size: 12px;
+    margin-bottom: 0;
+    width: 80px;
+  }
+
+  .resume-link:hover {
+    box-shadow: none;
+  }
+}
+
 /* WELCOME */
 .welcome-text {
   height: 80vh;
@@ -202,6 +247,20 @@ nav a:hover {
   }
 }
 
+@media (max-width: 1100px) {
+  .first {
+    font-size: 16px;
+  }
+
+  .second {
+    font-size: 34px;
+  }
+
+  #holder {
+    font-size: 24px;
+  }
+}
+
 /* ABOUT */
 .user-info strong {
   font-size: 18px;
@@ -250,6 +309,50 @@ nav a:hover {
 
 .user-info {
   margin-top: 0;
+}
+
+@media (max-width: 1100px) {
+  .about-content {
+    overflow: visible;
+    margin: auto;
+    display: block;
+  }
+
+  .card {
+    padding: 30px 0;
+  }
+
+  .flex-card {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-section {
+    width: 90%;
+    margin: auto;
+  }
+
+  .user-info {
+    width: 80%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar {
+    max-width: 120px;
+    border: 5px solid #f1f0f8;
+  }
+
+  .card {
+    padding: 20px 0;
+  }
+
+  .user-info {
+    font-size: 15px;
+  }
 }
 
 /* SKILLS */
@@ -351,6 +454,30 @@ nav a:hover {
   transform: rotateZ(180deg);
 }
 
+@media (max-width: 1100px) {
+  .slider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section h2 {
+    font-size: 22px;
+  }
+
+  #skills {
+    padding-top: 0;
+  }
+
+  .slider {
+    height: 70px;
+  }
+
+  .slide {
+    width: 70px;
+  }
+}
+
 /* TIMELINE */
 
 .education-section h2,
@@ -401,6 +528,36 @@ nav a:hover {
 .timeline__title {
   font-weight: bold;
   font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+  .timeline--education .timeline__media img {
+    min-width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-section h2,
+  .experience-section h2 {
+    font-size: 24px;
+  }
+
+  .timeline {
+    row-gap: 2em;
+  }
+
+  .timeline__title {
+    font-size: 16px;
+  }
+
+  .timeline__meta {
+    font-size: 15px;
+  }
+
+  .timeline--experience .timeline__media img {
+    max-width: 60px;
+  }
 }
 
 /* CONTACT */
@@ -483,6 +640,27 @@ textarea.contact-form-text {
   background: var(--secondary-color);
 }
 
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form button,
+  .contact-form-text {
+    font-size: 14px;
+  }
+
+  .contact-form-text {
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  textarea.contact-form-text {
+    height: 80px;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -536,171 +714,4 @@ footer {
 .media ul a {
   display: inline-block;
   margin-left: 25px;
-}
-
-/* Tablet */
-@media (max-width: 1100px) {
-  /* NAV */
-  .menu {
-    display: none;
-  }
-
-  /* Welcome Text */
-  .first {
-    font-size: 16px;
-  }
-
-  .second {
-    font-size: 34px;
-  }
-
-  #holder {
-    font-size: 24px;
-  }
-
-  /* ABOUT */
-
-  .about-content {
-    overflow: visible;
-    margin: auto;
-    display: block;
-  }
-  .card {
-    padding: 30px 0;
-  }
-
-  .flex-card {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .about-section {
-    width: 90%;
-    margin: auto;
-  }
-
-  .user-info,
-  .slider {
-    width: 80%;
-  }
-
-  .user-info {
-    margin: 10px;
-  }
-
-  /* Timeline */
-  :root {
-    --grid-template-columns: 6fr 1fr 12fr;
-  }
-
-  /* Education Logo */
-  .timeline--education .timeline__media img {
-    min-width: 100px;
-    height: auto;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  /* Menu */
-  .logo {
-    height: 30px;
-    padding: 15px 0;
-  }
-
-  nav li {
-    padding-top: 0.5em;
-  }
-
-  .resume-link {
-    font-size: 12px;
-    margin-bottom: 0;
-    width: 80px;
-  }
-
-  .resume-link:hover {
-    box-shadow: none;
-  }
-
-  /* About */
-
-  .avatar {
-    max-width: 120px;
-    border: 5px solid #f1f0f8;
-  }
-
-  .card {
-    padding: 20px 0;
-  }
-
-  .about-section h2 {
-    font-size: 22px;
-  }
-
-  .user-info {
-    font-size: 15px;
-  }
-
-  .slide {
-    width: 70px;
-  }
-
-  .slider {
-    height: 70px;
-  }
-
-  #skills {
-    padding-top: 0;
-  }
-
-  /* Timeline */
-
-  .grid {
-    padding-right: 2vh;
-    padding-left: 2vh;
-  }
-
-  .education-section h2,
-  .experience-section h2,
-  .contact-section h2 {
-    font-size: 24px;
-  }
-
-  .timeline__title {
-    font-size: 16px;
-  }
-
-  .timeline__meta {
-    font-size: 15px;
-  }
-
-  .timeline {
-    row-gap: 2em;
-  }
-
-  .timeline--experience .timeline__media img {
-    max-width: 60px;
-  }
-
-  #Education,
-  #Experience {
-    padding-top: 80px;
-  }
-
-  .contact-form input,
-  .contact-form button,
-  .contact-form-text {
-    font-size: 14px;
-  }
-
-  .contact-form-text {
-    height: 40px;
-    margin: 10px 0;
-  }
-
-  textarea.contact-form-text {
-    height: 80px;
-  }
 }
