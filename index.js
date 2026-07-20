@@ -1,3 +1,30 @@
+// Skills carousel: generate the decorative copies required for continuous motion
+const SKILL_SET_COUNT = 10;
+
+const initializeSkillsCarousel = () => {
+  const track = document.querySelector(".slide-track");
+
+  if (!track) {
+    return;
+  }
+
+  const originalSlides = Array.from(track.children);
+
+  for (let copy = 1; copy < SKILL_SET_COUNT; copy++) {
+    originalSlides.forEach((slide) => {
+      const clone = slide.cloneNode(true);
+      const image = clone.querySelector("img");
+
+      clone.setAttribute("aria-hidden", "true");
+      if (image) {
+        image.alt = "";
+      }
+      track.append(clone);
+    });
+  }
+};
+
+initializeSkillsCarousel();
 
 // Welcome Text: typing effect
 let t = 0 , j = 0;
@@ -150,4 +177,3 @@ function animation() {
 }
 
 animation();
-
