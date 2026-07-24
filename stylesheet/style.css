@@ -33,19 +33,16 @@
   }
 
   .grid {
-    padding-right: 2vh;
-    padding-left: 2vh;
+    padding-inline: 2vh;
   }
 }
 
 html {
-  width: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 body {
   margin: 0;
-  padding: 0;
   background-color: #f1f0f8;
   height: 100%;
   font-family: "Montserrat", sans-serif;
@@ -142,18 +139,15 @@ nav a:hover {
 
 .resume-link {
   width: 120px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   text-align: center;
   font-weight: 600;
   margin-left: 30px;
   margin-bottom: 30px;
   cursor: pointer;
   display: inline-block;
-  background-color: transparent;
   border: 3px solid var(--secondary-color);
   border-radius: 50px;
-  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   color: var(--secondary-color);
   text-decoration: none;
@@ -163,7 +157,6 @@ nav a:hover {
   box-shadow:
     0 0 10px 0 var(--secondary-color) inset,
     0 0 20px 2px var(--secondary-color);
-  border: 3px solid var(--secondary-color);
 }
 
 @media (max-width: 1100px) {
@@ -271,9 +264,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
-  margin: 0;
   text-align: justify;
 }
 
@@ -281,10 +272,6 @@ nav a:hover {
   width: 200px;
   border-radius: 50%;
   border: 10px solid #f1f0f8;
-}
-
-.about-section {
-  width: 100%;
 }
 
 .card {
@@ -307,10 +294,6 @@ nav a:hover {
   margin-left: 2rem;
 }
 
-.user-info {
-  margin-top: 0;
-}
-
 @media (max-width: 1100px) {
   .about-content {
     overflow: visible;
@@ -325,8 +308,6 @@ nav a:hover {
   .flex-card {
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 0;
   }
 
   .about-section {
@@ -362,9 +343,7 @@ nav a:hover {
 }
 
 #skills {
-  align-items: center;
   text-align: center;
-  justify-content: center;
   padding-top: 40px;
 }
 
@@ -414,15 +393,11 @@ nav a:hover {
   width: 60%;
 }
 
-.avatar,
-.slide img,
-.timeline__media img {
+.slide img {
   transition: transform 1s;
 }
 
-.avatar:hover,
-.slide img:hover,
-.timeline__media img:hover {
+.slide img:hover {
   transform: translateZ(20px);
 }
 
@@ -485,8 +460,6 @@ nav a:hover {
   font-size: 2em;
   margin: 0.67em 0;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .timeline {
@@ -517,12 +490,10 @@ nav a:hover {
 
 .timeline--experience .timeline__media img {
   max-width: 90px;
-  height: auto;
 }
 
 .timeline--education .timeline__media img {
   max-width: 180px;
-  height: auto;
 }
 
 .timeline__title {
@@ -533,7 +504,6 @@ nav a:hover {
 @media (max-width: 1100px) {
   .timeline--education .timeline__media img {
     min-width: 100px;
-    height: auto;
   }
 }
 
@@ -567,9 +537,7 @@ nav a:hover {
 
 .contact-section {
   background-color: var(--primary-color);
-  background-size: cover;
-  padding-top: 14vh;
-  padding-bottom: 40px;
+  padding: 14vh 0 40px;
 }
 
 .contact-section h2 {
@@ -633,7 +601,6 @@ textarea.contact-form-text {
   cursor: pointer;
   transition: 0.5s;
   font-size: 16px;
-  font-weight: bold;
 }
 
 .contact-form-btn:hover {
@@ -665,9 +632,7 @@ textarea.contact-form-text {
 
 footer {
   background: var(--primary-color);
-  margin-top: 0px;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding: 100px 0 40px;
 }
 
 #myName {
@@ -679,14 +644,10 @@ footer {
 }
 
 .media {
-  display: block;
-  margin-left: auto;
   margin-right: 3vh;
   color: white;
   padding-bottom: 30px;
-  align-items: center;
   text-align: center;
-  justify-content: center;
 }
 
 .socialmedia-icon {
