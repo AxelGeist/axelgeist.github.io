@@ -2,13 +2,6 @@
   --primary-color: #062446;
   --secondary-color: #87ceeb;
   --secondary-bright-color: #87cfeb76;
-  --grid-template-columns: 6fr 1fr 7fr;
-}
-
-@media (max-width: 1100px) {
-  :root {
-    --grid-template-columns: 6fr 1fr 12fr;
-  }
 }
 
 /* Distance to top, when using MENU links */
@@ -29,19 +22,10 @@
   scroll-margin-top: var(--section-offset);
 }
 
-/* Grid */
-.grid {
-  padding: 50px 0;
-}
-
 @media (max-width: 480px) {
   #Education,
   #Experience {
     --section-offset: 80px;
-  }
-
-  .grid {
-    padding-inline: 2vh;
   }
 }
 
@@ -481,11 +465,13 @@ nav a:hover {
   font-family: Arial;
   display: grid;
   row-gap: 5em;
+  padding: 50px 0;
 }
 
 .timeline__item {
   display: grid;
-  grid-template-columns: var(--grid-template-columns);
+  grid-template-columns: 6fr 7fr;
+  column-gap: calc(100% / 14);
 }
 
 .timeline__media {
@@ -494,13 +480,12 @@ nav a:hover {
 }
 
 .timeline__content {
-  grid-column: 3;
-  margin: auto;
-  width: 100%;
+  grid-column: 2;
+  align-self: center;
 }
 
 .timeline__content--align-end {
-  margin-bottom: 0;
+  align-self: end;
 }
 
 .timeline--experience .timeline__media img {
@@ -517,6 +502,11 @@ nav a:hover {
 }
 
 @media (max-width: 1100px) {
+  .timeline__item {
+    grid-template-columns: 6fr 12fr;
+    column-gap: calc(100% / 19);
+  }
+
   .timeline--education .timeline__media img {
     min-width: 100px;
   }
@@ -525,6 +515,7 @@ nav a:hover {
 @media (max-width: 480px) {
   .timeline {
     row-gap: 2em;
+    padding-inline: 2vh;
   }
 
   .timeline__title {
