@@ -13,12 +13,20 @@
 
 /* Distance to top, when using MENU links */
 #About {
-  padding-top: 20vh;
+  --section-offset: 20vh;
 }
 
 #Education,
 #Experience {
-  padding-top: 15vh;
+  --section-offset: 15vh;
+}
+
+#About,
+#Education,
+#Experience {
+  display: flow-root;
+  margin-top: var(--section-offset);
+  scroll-margin-top: var(--section-offset);
 }
 
 /* Grid */
@@ -29,7 +37,7 @@
 @media (max-width: 480px) {
   #Education,
   #Experience {
-    padding-top: 80px;
+    --section-offset: 80px;
   }
 
   .grid {
@@ -197,7 +205,7 @@ nav a:hover {
   justify-content: center;
   font-weight: bold;
   font-size: 26px;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .welcome-text-h1 {
@@ -531,12 +539,9 @@ nav a:hover {
 }
 
 /* CONTACT */
-#ContactX {
-  height: 70px;
-}
-
 .contact-section {
   background-color: var(--primary-color);
+  margin-top: 70px;
   padding: 14vh 0 40px;
 }
 
