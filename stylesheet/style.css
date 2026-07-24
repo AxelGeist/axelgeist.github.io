@@ -284,21 +284,17 @@ nav a:hover {
 }
 
 /* ABOUT */
+.about-content {
+  overflow: hidden;
+}
+
 .user-info strong {
   font-size: 18px;
 }
 
-.about-content {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  text-align: justify;
-}
-
 .avatar {
   width: 200px;
+  margin-bottom: 4px;
   border-radius: 50%;
   border: 10px solid #f1f0f8;
 }
@@ -306,6 +302,8 @@ nav a:hover {
 .card {
   max-width: 1000px;
   background-color: var(--primary-color);
+  color: white;
+  text-align: justify;
   border-radius: 20px;
   box-shadow:
     0 5px 10px rgba(154, 160, 185, 0.05),
@@ -324,12 +322,6 @@ nav a:hover {
 }
 
 @media (max-width: 1100px) {
-  .about-content {
-    overflow: visible;
-    margin: auto;
-    display: block;
-  }
-
   .card {
     padding: 30px 0;
   }
@@ -344,8 +336,16 @@ nav a:hover {
     margin: auto;
   }
 
-  .user-info {
+  .about-content {
+    overflow: visible;
+  }
+
+  .user-info,
+  .slider {
     width: 80%;
+  }
+
+  .user-info {
     margin: 10px;
   }
 }
@@ -380,7 +380,6 @@ nav a:hover {
   height: 100px;
   margin: auto;
   position: relative;
-  max-width: 1000px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -456,12 +455,6 @@ nav a:hover {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
-}
-
-@media (max-width: 1100px) {
-  .slider {
-    width: 80%;
-  }
 }
 
 @media (max-width: 480px) {
