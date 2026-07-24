@@ -122,13 +122,15 @@ nav {
 }
 
 nav ul {
+  display: flex;
+  align-items: baseline;
+  gap: 4.0625px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 nav li {
-  display: inline-block;
   padding-top: 1.75em;
 }
 
