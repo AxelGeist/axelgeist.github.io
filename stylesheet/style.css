@@ -70,6 +70,22 @@ body {
   border: 0;
 }
 
+.education-section > h2,
+.experience-section > h2,
+.contact-section > h2 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .education-section > h2,
+  .experience-section > h2,
+  .contact-section > h2 {
+    font-size: 24px;
+  }
+}
+
 canvas#canvas {
   position: absolute;
   top: 0;
@@ -125,6 +141,10 @@ nav ul {
   display: flex;
   align-items: baseline;
   gap: 4.0625px;
+}
+
+nav ul,
+.media ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -152,8 +172,7 @@ nav a:hover {
   padding: 10px 0;
   text-align: center;
   font-weight: 600;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin: 0 0 30px 30px;
   cursor: pointer;
   display: inline-block;
   border: 3px solid var(--secondary-color);
@@ -465,13 +484,6 @@ nav a:hover {
 
 /* TIMELINE */
 
-.education-section h2,
-.experience-section h2 {
-  font-size: 2em;
-  margin: 0.67em 0;
-  text-align: center;
-}
-
 .timeline {
   font-family: Arial;
   display: grid;
@@ -518,11 +530,6 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-  .education-section h2,
-  .experience-section h2 {
-    font-size: 24px;
-  }
-
   .timeline {
     row-gap: 2em;
   }
@@ -543,15 +550,9 @@ nav a:hover {
 /* CONTACT */
 .contact-section {
   background-color: var(--primary-color);
+  color: white;
   margin-top: 70px;
   padding: 14vh 0 40px;
-}
-
-.contact-section h2 {
-  font-size: 2em;
-  margin: 0.67em 0;
-  color: white;
-  text-align: center;
 }
 
 .border {
@@ -568,12 +569,12 @@ nav a:hover {
   overflow: hidden;
 }
 
-.contact-form input,
-.contact-form button,
-.contact-form-text {
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
+.contact-form-text,
+.contact-form-btn {
+  color: inherit;
+  font-family: inherit;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .contact-form-text {
@@ -585,8 +586,7 @@ nav a:hover {
   background: #111;
   padding: 20px 40px;
   outline: none;
-  color: white;
-  transition: 0.5s;
+  font-size: 18px;
 }
 
 .contact-form-text:focus {
@@ -606,8 +606,7 @@ textarea.contact-form-text {
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.5s;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .contact-form-btn:hover {
@@ -615,13 +614,8 @@ textarea.contact-form-text {
 }
 
 @media (max-width: 480px) {
-  .contact-section h2 {
-    font-size: 24px;
-  }
-
-  .contact-form input,
-  .contact-form button,
-  .contact-form-text {
+  .contact-form-text,
+  .contact-form-btn {
     font-size: 14px;
   }
 
@@ -639,11 +633,11 @@ textarea.contact-form-text {
 
 footer {
   background: var(--primary-color);
+  color: white;
   padding: 100px 0 40px;
 }
 
 #myName {
-  color: white;
   display: flex;
   align-items: center;
   text-align: center;
@@ -652,7 +646,6 @@ footer {
 
 .media {
   margin-right: 3vh;
-  color: white;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -667,12 +660,6 @@ footer {
 .socialmedia-icon:hover {
   color: var(--secondary-color);
   transform: translate(0, -10px);
-}
-
-.media ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .media ul li {
