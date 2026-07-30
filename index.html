@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
-
+<html lang="en">
   <!-- )                     (            )  
   ( /(  (                  )\ )      ( /(  
   )\()) )\    (   (  (    (()/(   (  )\()) 
@@ -13,82 +12,96 @@
                                             
   -->
 
-
   <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Raleway:wght@700&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href= images/snow.svg>
+    <link rel="icon" type="image/svg+xml" href="images/snow.svg" />
     <title>Axel Geist</title>
   </head>
 
-
-
   <body id="Home">
-      <!-- MENU -->
+    <!-- MENU -->
 
-      <canvas id="canvas"></canvas>
+    <canvas id="canvas" aria-hidden="true"></canvas>
 
-      <header>
-        <div class="container">
-          <a href="#Home"><ion-icon name="snow-outline" class="logo"></ion-icon></a>
-          <nav>
-            <ul id="menuList">
-              <li><a class="menu" href="#About">About</a></li>
-              <li><a class="menu" href="#Experience">Experience</a></li>
-              <li><a class="menu" href="#Education">Education</a></li>
-              <!-- <li><a class="menu" href="#Projects">Projects</a></li> -->
-              <li><a class="menu" href="#Contact">Contact</a></li>
-              <li>
-                <div><a class="CVButton" href="RESUME/RESUME_AXEL_GEIST.pdf" target = _blank>Resume</a></div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    <header>
+      <div class="site-header__inner">
+        <a href="#Home" aria-label="Home"
+          ><ion-icon
+            name="snow-outline"
+            class="logo"
+            aria-hidden="true"
+          ></ion-icon
+        ></a>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a class="menu" href="#About">About</a></li>
+            <li><a class="menu" href="#Experience">Experience</a></li>
+            <li><a class="menu" href="#Education">Education</a></li>
+            <li><a class="menu" href="#Contact">Contact</a></li>
+            <li>
+              <a
+                class="resume-link"
+                href="RESUME/RESUME_AXEL_GEIST.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main>
       <!-- Welcome Text -->
 
-      <div class="welcome-text">
+      <section class="welcome-text">
         <h1 class="welcome-text-h1">
-          <b class="first">HI, MY NAME IS</b><br>
-          <b class="second">AXEL GEIST</b><br>
+          <b class="first">HI, MY NAME IS</b><br />
+          <b class="second">AXEL GEIST</b><br />
           <span class="cursor hidden"></span>
+          <!-- prettier-ignore -->
           <b class="third" id="typingEffect">Welcome, Bienvenue, 欢迎, Willkommen, Добро пожаловать, ようこそ, 환영합니다, أهلاً وسهلاً, स्वागत है, Welkom, Välkommen, Καλώς ήρθατε</b>
           <span id="holder"> </span>
           <span class="cursor"></span>
-        </h1>   
-      </div>
-        
- 
+        </h1>
+      </section>
+
       <!-- ABOUT -->
-      <div id="About"></div>
-
-      <form class="user-form" id="form">
-        <!-- <input type="text" id="search"> -->
-
-        <div id="main" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-
+      <section class="about-section" id="About">
+        <div class="about-content" data-aos="fade-up">
           <div class="card">
             <div class="flex-card">
-              <div>
-                <img src="images/profile.jpg" alt="" class="avatar">
-              </div>
+              <img
+                src="images/profile.jpg"
+                alt="Portrait of Axel Geist"
+                class="avatar"
+              />
               <div class="user-info">
                 <h2>About</h2>
-                <p> Hello! I'm Axel and I studied Computer Science & Engineering at TU Delft. I have a Real Estate background and
-                  I love to program with backend, cloud and infrastructure technologies. 
+                <p>
+                  Hello! I'm Axel and I studied Computer Science &amp;
+                  Engineering at TU Delft. I have a Real Estate background and I
+                  love to program with backend, cloud and infrastructure
+                  technologies.
                 </p>
 
-                <p>Feel free to contact me if you have any <strong>questions</strong> or want to <strong>team up</strong> to start a project
-                or participate in a <strong>programming contest!</strong></p>
-
-
+                <p>
+                  Feel free to contact me if you have any
+                  <strong>questions</strong> or want to
+                  <strong>team up</strong> to start a project or participate in
+                  a
+                  <strong>programming contest!</strong>
+                </p>
               </div>
             </div>
 
@@ -97,339 +110,314 @@
             <div class="slider">
               <div class="slide-track">
                 <div class="slide">
-                  <img src="images/skills/kubernetes.png">
+                  <img src="images/skills/kubernetes.png" alt="Kubernetes" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/docker.png">
+                  <img src="images/skills/docker.png" alt="Docker" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/react.png">
+                  <img src="images/skills/react.png" alt="React" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/linux.png">
+                  <img src="images/skills/linux.png" alt="Linux" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/javascript.png">
+                  <img src="images/skills/javascript.png" alt="JavaScript" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/java.png">
+                  <img src="images/skills/java.png" alt="Java" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/python.png">
+                  <img src="images/skills/python.png" alt="Python" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/mysql.png">
+                  <img src="images/skills/mysql.png" alt="MySQL" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/git.png">
+                  <img src="images/skills/git.png" alt="Git" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/golang.png">
+                  <img src="images/skills/golang.png" alt="Go" />
                 </div>
                 <div class="slide">
-                  <img src="images/skills/spring.png">
-                </div>
-      
-                <!-- Repeat images -->
-                <div class="slide">
-                  <img src="images/skills/kubernetes.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/docker.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/react.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/linux.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/javascript.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/java.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/python.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/mysql.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/git.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/golang.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/spring.png">
-                </div>
-
-
-                <div class="slide">
-                  <img src="images/skills/kubernetes.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/docker.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/react.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/linux.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/javascript.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/java.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/python.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/mysql.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/git.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/golang.png">
-                </div>
-                <div class="slide">
-                  <img src="images/skills/spring.png">
+                  <img src="images/skills/spring.png" alt="Spring" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
-
+      </section>
 
       <!-- EXPERIENCE -->
-      <div id="Experience"></div>
-      <div class="experience-section">
-        <h1 data-aos="fade-down" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">EXPERIENCE</h1>
-        <div class="experience-grid grid">
-
-
-          <div class="experience-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <a href="https://www.datadoghq.com/" target="_blank"><img src="images\datadog_logo.svg" alt="R&S_logo"></a>
-          </div>
-          <div class="space-div"></div>
-          <div class="experience-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <div class="title">Software Engineer II</div>
-            <div class="text">Dec 2025 - Present, France</div>
-            <div class="title">Software Engineer I</div>
-            <div class="text">Aug 2024 - Nov 2025, France</div>
-            <div class="title">Software Engineer | Intern</div>
-            <div class="text">Jun 2023 - Dec 2023, France</div>
-            <!-- <div class="text">Datadog (Cloud Monitoring)</div> -->
-          </div>
-
-          <div class="experience-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <a href="https://www.thalesgroup.com/en" target="_blank"><img src="images\thales_logo.png" alt="R&S_logo"></a>
-          </div>
-          <div class="space-div"></div>
-          <div class="experience-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <div class="title">Software Engineer | Intern</div>
-            <!-- <div class="text">Thales (Defense & Security)</div> -->
-            <div class="text">Apr 2023 - Jun 2023, Netherlands</div>
-          </div>
-
-          <div class="experience-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <a href="https://www.rohde-schwarz.com/us/home_48230.html?change_c=true" target="_blank"><img src="images\rohde-schwarz_logo.png" alt="R&S_logo"></a>
-          </div>
-          <div class="space-div"></div>
-          <div class="experience-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <div class="title">Software Engineer | Intern</div>
-            <!-- <div class="text">Rohde & Schwarz (Telecommunication)</div> -->
-            <div class="text">Jul 2022 - Sep 2022, Germany</div>
-          </div>
-
-          <!-- <div class="experience-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <a href="https://www.tower360.co/en/" target="_blank"><img src="images\tower360_logo.webp" alt="Tower360_logo" id="tower360_img"></a> 
-          </div>
-          <div class="space-div"></div>
-          <div class="experience-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <div class="title">Business Development Associate</div>
-            <div class="text">Tower360 (PropTech)</div>
-            <div class="text">Sep 2020 - Aug 2021, Germany</div>
-            <div class="work-type">Full Time</div>
-          </div>
-          <div class="experience-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-            <a href="https://www.savills.com/" target="_blank"><img src="images\Savills_logo.png" alt="Savills_logo"></a> 
-          </div>
-          <div class="space-div"></div>
-          <div class="experience-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">    
-            <div class="title">Investment</div>
-            <div class="text">Savills (Real Estate Service Provider)</div>
-            <div class="text">Oct 2019 - Apr 2020, Germany</div>
-            <div class="work-type">Working Student</div>
-          </div>
-            
-
-            <div class="experience-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <a href="https://www.ubs.com/de/en.html" target="_blank"><img src="images\UBS_logo.png" alt="UBS_logo"></a>
+      <section class="experience-section" id="Experience">
+        <h2 data-aos="fade-down">EXPERIENCE</h2>
+        <div class="timeline timeline--experience">
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.datadoghq.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="images/datadog_logo.svg" alt="Datadog"
+              /></a>
             </div>
-            <div class="space-div"></div>
-            <div class="experience-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <div class="title">Asset Management</div>
-              <div class="text">UBS (Multinational Investment Bank)</div>
-              <div class="text">Feb 2019 - August 2019, Germany</div>
-              <div class="work-type">Internship</div>
-            </div> -->
-        </div>
-      </div>
+            <div class="timeline__content" data-aos="fade-left">
+              <div class="timeline__title">Software Engineer II</div>
+              <div class="timeline__meta">Dec 2025 - Present, France</div>
+              <div class="timeline__title">Software Engineer I</div>
+              <div class="timeline__meta">Aug 2024 - Nov 2025, France</div>
+              <div class="timeline__title">Software Engineer | Intern</div>
+              <div class="timeline__meta">Jun 2023 - Dec 2023, France</div>
+            </div>
+          </div>
 
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.thalesgroup.com/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="images/thales_logo.png" alt="Thales"
+              /></a>
+            </div>
+            <div class="timeline__content" data-aos="fade-left">
+              <div class="timeline__title">Software Engineer | Intern</div>
+              <div class="timeline__meta">Apr 2023 - Jun 2023, Netherlands</div>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.rohde-schwarz.com/us/home_48230.html?change_c=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/rohde-schwarz_logo.png"
+                  alt="Rohde &amp; Schwarz"
+              /></a>
+            </div>
+            <div class="timeline__content" data-aos="fade-left">
+              <div class="timeline__title">Software Engineer | Intern</div>
+              <div class="timeline__meta">Jul 2022 - Sep 2022, Germany</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- EDUCATION -->
-      <div id="Education"></div>
-      <div class="education-section">
-        <h1 data-aos="fade-down" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">EDUCATION</h1>
-        <div class="education-grid grid">
-
-            <div class="education-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <a href="https://www.gatech.edu/" target="_blank"><img src="images/GTech_logo.png" alt="GTech_logo"></a></div>
-            <div class="space-div"></div>
-            <div class="education-text" id="TUD-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <div class="title">Georgia Tech Institute of Technology</div>
-              <div class="text">Master of Science, Computer Science</div>
-              <div class="text">2025 - present, USA</div>
+      <section class="education-section" id="Education">
+        <h2 data-aos="fade-down">EDUCATION</h2>
+        <div class="timeline timeline--education">
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.gatech.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/GTech_logo.png"
+                  alt="Georgia Institute of Technology"
+              /></a>
             </div>
-
-            <div class="education-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <a href="https://www.tudelft.nl/en" target="_blank"><img src="images/TU_Delft_logo.png" alt="TU_Delft_logo"></a></div>
-            <div class="space-div"></div>
-            <div class="education-text" id="TUD-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <div class="title">Delft University of Technology</div>
-              <div class="text">Bachelor of Science, Computer Science & Engineering</div>
-              <div class="text">2021 - 2024, Netherlands</div>
-            </div>               
-
-            <div class="education-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <a href="https://www.hfwu.com/" target="_blank"><img src="images/HfWU_logo.png" alt="HfWU_logo"></a> 
-            </div>
-            <div class="space-div"></div>
-            <div class="education-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <div class="title">Nuertingen-Geislingen University</div>
-              <div class="text">Bachelor of Science, Real Estate Economics</div>
-              <div class="text">2017 - 2020, Germany</div>
-            </div>
-         
-            <div class="education-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-              <a href="https://www.rmit.edu.au/" target="_blank"><img src="images/RMIT_logo.png" alt="RMIT_logo"></a> 
-             </div>
-             <div class="space-div"></div>
-             <div class="education-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">    
-               <div class="title">Royal Melbourne Institute of Technology</div>
-               <div class="text">Exchange Semester</div>
-               <div class="text">2018, Australia</div></div>
-
-        </div>
-      </div>
-
-
-            <!-- Projects -->
-            <!-- <div id="Projects"></div>
-            <div class="project-section">
-              <h1 data-aos="fade-down" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">PROJECTS</h1>
-
-              <div class="project-grid grid">
-
-                <div class="project-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-                  <a href="https://www.tudelft.nl/dhpc/system" target="_blank"><img src="images/DelftBlue.png" alt="blades_logo" id="DelftBlue_img"></a> 
-                </div>
-                <div class="space-div"></div>
-                <div class="project-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-                  <div class="title">Supercomputer DelftBlue</div>
-                  <div class="text">Processor Scheduling System</div>
-                  <div class="text">Back-End: Java, Spring, H2 Database, REST API</div>
-                </div>
-
-                <div class="project-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-                  <a href="https://github.com/AxelGeist/Quiz-Game" target="_blank"><img src="images/blades.png" alt="blades_logo" id="blades_img"></a> 
-                </div>
-                <div class="space-div"></div>
-                <div class="project-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-                  <div class="title">Energy Awareness Game</div>
-                  <div class="text">Multiplayer Quiz Game</div>
-                  <div class="text">Front-End: JavaFX CSS</div>
-                  <div class="text">Back-End: Java, Spring, H2 Database REST API, Long Polling</div>
-                </div>
-
-                <div class="project-img" data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-                  <a href="https://github.com/AxelGeist/Chess960" target="_blank"><img src="images/fishes-logo.png" alt="fishes_logo" id="fishes_img"></a> 
-                </div>
-                <div class="space-div"></div>
-                <div class="project-text" data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in" data-aos-once="true">
-                  <div class="title">Fischer Random Chess</div>
-                  <div class="text">2 player Chess Game</div>
-                  <div class="text">Front-End: HTML, CSS, JavaScript</div>
-                  <div class="text">Back-End: Node.js, REST API, WebSockets</div>
-                </div>
+            <div
+              class="timeline__content timeline__content--align-end"
+              data-aos="fade-left"
+            >
+              <div class="timeline__title">
+                Georgia Tech Institute of Technology
               </div>
-            </div> -->
+              <div class="timeline__meta">
+                Master of Science, Computer Science
+              </div>
+              <div class="timeline__meta">2025 - present, USA</div>
+            </div>
+          </div>
 
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.tudelft.nl/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/TU_Delft_logo.png"
+                  alt="Delft University of Technology"
+              /></a>
+            </div>
+            <div
+              class="timeline__content timeline__content--align-end"
+              data-aos="fade-left"
+            >
+              <div class="timeline__title">Delft University of Technology</div>
+              <div class="timeline__meta">
+                Bachelor of Science, Computer Science &amp; Engineering
+              </div>
+              <div class="timeline__meta">2021 - 2024, Netherlands</div>
+            </div>
+          </div>
 
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.hfwu.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/HfWU_logo.png"
+                  alt="Nuertingen-Geislingen University"
+              /></a>
+            </div>
+            <div class="timeline__content" data-aos="fade-left">
+              <div class="timeline__title">
+                Nuertingen-Geislingen University
+              </div>
+              <div class="timeline__meta">
+                Bachelor of Science, Real Estate Economics
+              </div>
+              <div class="timeline__meta">2017 - 2020, Germany</div>
+            </div>
+          </div>
 
-
-
-
-
-      <!-- CONTACT -->
-      <div id="ContactX"></div>
-      <div class="contact-section" id="Contact">
-        <h1>CONTACT</h1>
-        <div class="border"></div>
-        <form class="contact-form" action="https://formsubmit.co/8d745aeb981165fca3afc0aa47a7cf4a" method="POST">
-          <input name="name" type="text" class="contact-form-text" placeholder="Name*" required>
-          <input name="email" type="email" class="contact-form-text" placeholder="Email*" required>
-          <input name="phone" type="text" class="contact-form-text" placeholder="Phone*" required>
-          <textarea name="message" class="contact-form-text" placeholder="Message*" required></textarea>
-          <input type="submit" class="contact-form-btn" value="Submit">
-        </form>
-      </div>
-
-  
-
-      <!-- FOOTER -->
-      <footer>
-
-        <div class="media">
-          <ul>
-
-            <a href="http://linkedin.com/in/axel-geist" target="_blank">
-              <li><ion-icon class="socialmedia-icon" name="logo-linkedin"></ion-icon></li>
-            </a>
-
-            <a href="https://github.com/AxelGeist" target="_blank">
-              <li><ion-icon class="socialmedia-icon" name="logo-github"></ion-icon></li>
-            </a>
-
-            <a href="mailto:geist.axel@gmail.com" target="_blank">
-              <li><ion-icon class="socialmedia-icon" name="mail-outline"></ion-icon></li>
-            </a>
-
-          </ul>
+          <div class="timeline__item">
+            <div class="timeline__media" data-aos="fade-right">
+              <a
+                href="https://www.rmit.edu.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/RMIT_logo.png"
+                  alt="Royal Melbourne Institute of Technology"
+              /></a>
+            </div>
+            <div class="timeline__content" data-aos="fade-left">
+              <div class="timeline__title">
+                Royal Melbourne Institute of Technology
+              </div>
+              <div class="timeline__meta">Exchange Semester</div>
+              <div class="timeline__meta">2018, Australia</div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact-section" id="Contact">
+        <h2>CONTACT</h2>
+        <div class="border"></div>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/8d745aeb981165fca3afc0aa47a7cf4a"
+          method="POST"
+        >
+          <label class="visually-hidden" for="contact-name">Name</label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            class="contact-form-text"
+            placeholder="Name*"
+            autocomplete="name"
+            required
+          />
+          <label class="visually-hidden" for="contact-email">Email</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            class="contact-form-text"
+            placeholder="Email*"
+            autocomplete="email"
+            required
+          />
+          <label class="visually-hidden" for="contact-phone">Phone</label>
+          <input
+            id="contact-phone"
+            name="phone"
+            type="tel"
+            class="contact-form-text"
+            placeholder="Phone*"
+            autocomplete="tel"
+            required
+          />
+          <label class="visually-hidden" for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            class="contact-form-text"
+            placeholder="Message*"
+            required
+          ></textarea>
+          <button type="submit" class="contact-form-btn">Submit</button>
+        </form>
+      </section>
+    </main>
 
-        <span id="myName">AXEL GEIST ©2026</span>
-      </footer>
+    <!-- FOOTER -->
+    <footer>
+      <ul class="media">
+        <li>
+          <a
+            href="https://linkedin.com/in/axel-geist"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Axel Geist on LinkedIn"
+          >
+            <ion-icon
+              class="socialmedia-icon"
+              name="logo-linkedin"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </li>
 
-      <!-- Script for Socialmedia icons -->
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <script src="index.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <li>
+          <a
+            href="https://github.com/AxelGeist"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Axel Geist on GitHub"
+          >
+            <ion-icon
+              class="socialmedia-icon"
+              name="logo-github"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </li>
 
-      <script>
-         AOS.init({
-          duration: 1200,
-          once: true,
-          // disable: window.innerWidth < 750, 
-         })
-      </script>
+        <li>
+          <a href="mailto:geist.axel@gmail.com" aria-label="Email Axel Geist">
+            <ion-icon
+              class="socialmedia-icon"
+              name="mail-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+        </li>
+      </ul>
 
+      <span>AXEL GEIST ©2026</span>
+    </footer>
+
+    <!-- Script for Socialmedia icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        delay: 50,
+        duration: 1200,
+        easing: "ease-in",
+        once: true,
+      });
+    </script>
   </body>
 </html>
