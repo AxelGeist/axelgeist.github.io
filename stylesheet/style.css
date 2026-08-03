@@ -27,6 +27,7 @@
 
 @media (max-width: 480px) {
   #About {
+    --section-offset: 20svh;
     --section-scroll-offset: 64px;
     min-height: calc(100vh - 64px);
     min-height: calc(100svh - 64px);
@@ -86,6 +87,12 @@ canvas#canvas {
   width: 100vw;
   height: 100vh;
   z-index: -1;
+}
+
+@media (max-width: 480px) {
+  canvas#canvas {
+    height: 100svh;
+  }
 }
 
 /* MENU */
@@ -385,6 +392,11 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+  .about-section {
+    box-sizing: border-box;
+    padding-top: 32px;
+  }
+
   .avatar {
     max-width: 120px;
     border: 5px solid #f1f0f8;
